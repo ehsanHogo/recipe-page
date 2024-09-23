@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+
+  background-color: hsl(30, 54%, 90%);
+}
+
+.mainBody {
+  padding: 10rem;
+}
+
+.recipeCard {
+  background-color: white;
+
+  padding: 2rem;
+}
+.foodPic {
+  width: 100%;
+  height: auto;
+}
