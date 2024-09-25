@@ -11,17 +11,20 @@ body {
 }
 
 .mainBody {
-  padding: 10rem;
+  padding-inline: 20rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .recipeCard {
   background-color: white;
-
-  padding: 2rem;
+  border-radius: 25px;
+  padding: 3rem;
 }
 .foodPic {
   width: 100%;
   height: auto;
+  border-radius: 15px;
 }
 
 @font-face {
@@ -76,6 +79,12 @@ li {
 .preparationTitle {
   color: hsl(332, 51%, 32%);
   margin-bottom: 1rem;
+  font-weight: bolder;
+  font-size: large;
+}
+
+#purplePreparationBuletpoint li::marker {
+  color: hsl(332, 51%, 32%);
 }
 .IngeredientTitle {
   margin-top: 1rem;
@@ -89,6 +98,16 @@ li {
   color: hsl(30, 10%, 34%);
 }
 
+#brownIngeredientBuletpoint li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bolder;
+  font-family: descriptionFont;
+  line-height: 1.5rem;
+}
 .instructionTitle {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -106,6 +125,7 @@ li {
   font-weight: 950;
   padding-left: 0.5rem;
   color: hsl(30, 10%, 34%);
+  font-family: descriptionFont;
 }
 .nutritionTitle {
   margin-top: 1rem;
@@ -128,9 +148,22 @@ table {
 
 tr:not(:last-child) td {
   border-bottom: 1px solid black; /* Horizontal border between items */
+  border-color: hsl(30, 54%, 90%);
 }
 
 tr td {
   padding: 1rem;
   width: 50%;
+}
+
+.nutritionElement {
+  font-family: descriptionFont;
+  color: hsl(30, 10%, 34%);
+  /* font-weight: bold; */
+}
+
+.nutritionMagnitude {
+  font-family: descriptionFont;
+  color: hsl(14, 45%, 36%);
+  font-weight: bolder;
 }

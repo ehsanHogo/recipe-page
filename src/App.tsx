@@ -1,5 +1,3 @@
-import React from "react";
-
 import omelettePic from "./assets/images/image-omelette.jpeg";
 import "./App.css";
 function App() {
@@ -22,7 +20,7 @@ function App() {
           </div>
           <div className="preparationCard">
             <p className="preparationTitle">Preparation</p>
-            <ul>
+            <ul id="purplePreparationBuletpoint">
               <li>
                 <span className="preparationItem">Total :</span>
                 <p className="preparationItemdesc">Approximately 10 minutes</p>
@@ -42,7 +40,7 @@ function App() {
           <div>
             <h2 className="IngeredientTitle">Ingeredients</h2>
 
-            <ul>
+            <ul id="brownIngeredientBuletpoint">
               <li>
                 <p className="ingeredientsItem">2-3 large eggs</p>
               </li>
@@ -130,21 +128,21 @@ function App() {
             <table>
               <tbody>
                 <tr>
-                  <td className="">Colories</td>
-                  <td>277kcal</td>
+                  <td className="nutritionElement">Colories</td>
+                  <td className="nutritionMagnitude">277kcal</td>
                 </tr>
 
                 <tr>
-                  <td>Carbs</td>
-                  <td>0g</td>
+                  <td className="nutritionElement">Carbs</td>
+                  <td className="nutritionMagnitude">0g</td>
                 </tr>
                 <tr>
-                  <td>Protein</td>
-                  <td>20g</td>
+                  <td className="nutritionElement">Protein</td>
+                  <td className="nutritionMagnitude">20g</td>
                 </tr>
                 <tr>
-                  <td>Fat</td>
-                  <td>22g</td>
+                  <td className="nutritionElement">Fat</td>
+                  <td className="nutritionMagnitude">22g</td>
                 </tr>
               </tbody>
             </table>
